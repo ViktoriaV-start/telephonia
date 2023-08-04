@@ -1,0 +1,15 @@
+@import "@vars";
+
+.chooseNumber {
+    background-color: $background;
+
+    &__wrapper {
+        margin-top: 44px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 32px;
+    }
+}

@@ -1,0 +1,53 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.header {
+    background-color: $white;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $home-page-padding;
+    img {
+        margin-left: 6px;
+    }
+    &__logo {
+        > a {
+            height: 35px;
+        }
+    }
+    &__feedback {
+        min-width: 223px;
+        color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > p {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            margin-right: 80px;
+        }
+        > a {
+            text-decoration: none;
+            background-color: $blue_light;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            border: 1px solid $black;
+            border-radius: 15px;
+            padding: 15.5px 30px;
+            &:hover,
+            &:active {
+                background-color: $black;
+                color: $white;
+            }
+        }
+        > .user_name {
+            max-width: 250px;
+            overflow: hidden;
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.slide {
+    color: $black;
+    background-color: $blue_light;
+    padding: $container;
+
+    // @include adaptiv-value("padding-block", 60, 16);
+    // @include adaptiv-value("padding-inline", 85, 24);
+    // @include adaptiv-value("font-size", 25, 7);
+    // @include adaptiv-value("line-height", 32.5, 9);
+
+    &__body {
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        // @include adaptiv-value("font-size", 40, 11);
+        // @include adaptiv-value("line-height", 48, 14);
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+
+    &__title {
+        @include adaptiv-value("font-size", 40, 11);
+        @include adaptiv-value("line-height", 48, 14);
+        font-weight: 700;
+    }
+}    

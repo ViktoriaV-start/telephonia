@@ -1,0 +1,63 @@
+@import "@vars";
+
+.page__wrapper {
+    display: flex;
+    justify-content: center;
+    color: $dark_text;
+    align-items: center;
+
+    user-select: none;
+
+    &_next {
+        margin-left: 15px;
+        cursor: pointer;
+    }
+
+    &_previous {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+}
+
+.page__btn {
+    cursor: pointer;
+    transition: 0.5s all;
+    border-radius: 50%;
+    background-color: $dark_text;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    color: transparent;
+    margin-inline: 5px;
+
+    &_active {
+        width: 16px;
+        height: 16px;
+        background-color: $blue;
+    }
+
+    &_previous{
+        display: flex;
+        align-items: center;
+        margin-right: 22px;
+        cursor: pointer;
+    }
+
+    &_next{
+        display: flex;
+        align-items: center;
+        margin-left: 22px;
+        cursor: pointer;
+    }
+}
+
+.current__page {
+    background-color: cadetblue;
+    color: wheat;
+    transition: 0.5s all;
+}
+
+.plug {
+    font-size: 2em;
+    display: block;
+}

@@ -1,0 +1,13 @@
+@import "@vars";
+
+.categories {
+    @extend %categories;
+
+    button {
+        cursor: pointer;
+    }
+}
+
+// .active {
+//     color: $blue;
+// }

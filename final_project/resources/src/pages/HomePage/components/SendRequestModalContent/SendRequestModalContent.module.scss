@@ -1,0 +1,49 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 40rem;
+    max-width: 95%;
+    min-height: 10rem;
+    border-radius: 1rem;
+    z-index: 10;
+    text-align: center;
+    p {
+        font-size: 2rem;
+        padding: 1rem;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
+    }
+    button {
+        padding: 0.5rem 2rem;
+        margin-bottom: 1rem;
+    }
+    animation: fade-in 200ms ease-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

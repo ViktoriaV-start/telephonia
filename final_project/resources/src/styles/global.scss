@@ -1,0 +1,35 @@
+// Файл для шрифтов, сбросов стилей и прочие глобальные вещи
+@import "norm";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    //overflow-x: hidden;
+}
+
+.wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.error {
+    font-size: 2em;
+    color: red;
+}
+
+.admin__container {
+    margin: 0 auto;
+    width: 96vw;
+    min-width: 1140px !important;
+    max-width: 2500px;
+}

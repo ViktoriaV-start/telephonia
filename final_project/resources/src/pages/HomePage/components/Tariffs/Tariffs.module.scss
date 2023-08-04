@@ -1,0 +1,172 @@
+@import "@/styles/global.scss";
+@import '@mixins';
+
+.tariffs{
+    font-family: sans-serif;
+    font-size: 25px;
+    line-height: 32.5px;   
+    font-weight: 400; 
+    color: $black;
+    background-color: $blue_light;
+    padding: 60px 85px;
+/*    
+    @include adaptiv-value("padding-block", 60, 16);
+    @include adaptiv-value("padding-inline", 85, 24);
+    @include adaptiv-value("font-size", 25, 7);
+    @include adaptiv-value("line-height", 32.5, 9);
+*/
+    &__title{
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 120%;   
+    }
+    &__block{
+        margin-top: 44px;
+        max-width: 1270px;
+        min-height: 655px;
+        display: flex; 
+        gap: 88px;  
+    }
+    &__options{  
+        max-width: 591px;     
+        min-height: 655px;
+        padding: 40px;
+        background: $white;
+        border-radius: 20px;
+    }
+    &__titlesm{
+        font-family: Roboto;    
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        margin-bottom: 30px;
+/*      white-space: nowrap;
+        @include adaptiv-value("font-size", 40, 10);
+        @include adaptiv-value("line-height", 32.5, 9);
+*/
+    }
+    &__tbl{
+        max-width: 435px;
+        min-height: 280px;
+        display: flex; 
+        gap: 62.38px;  
+    }
+    &__tbl_l{
+        max-width: 257px;
+        min-height: 280px;
+    }
+    &__tbl_r{
+        max-width: 116px;
+        min-height: 280px;
+        font-size: 30px;
+        line-height: 36px;
+    }
+    &__tbl_t{
+        font-size: 25px;
+        line-height: 130%;
+	    border: none;
+        margin-bottom: 30px;
+    }
+    &__btns{
+        max-width: 511px;
+        display: flex; 
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 42px;
+    }
+    &__btn{    
+        max-width: 280px;        
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        padding: 10px;
+        background: $blue_light;
+        border: none;
+/*    
+        @include adaptiv-value("font-size", 20, 5);
+        @include adaptiv-value("line-height", 28, 8);
+*/
+    }
+    &__price{
+        display: flex; 
+        justify-content: space-between;
+        gap: 62px;
+        margin-bottom: 30px;
+    }
+    &__rub{
+        display: flex; 
+        flex-direction: column;
+    }
+    &__rub{
+        display: flex; 
+        flex-direction: column;
+    }
+    &__titlemin{
+        font-family: Roboto;    
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 120%;
+    }
+    &__text{
+        font-family: Roboto;    
+        font-weight: 700;
+        font-size: 33.5px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    &__lnk {
+        text-decoration: none;
+        max-width: 320px;        
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        background: $blue_light;
+        border: 1px solid $black;
+        border-radius: 15px;
+        text-align: center;
+        padding: 12px 45px;
+    }
+    &__lnk:hover {     
+        color: $white;
+        background-color: $black; 
+    }
+    .blue_nmb{
+        color: $blue;
+        margin-bottom: 25px;
+        white-space: nowrap;
+    }
+    .red_nmb{
+        color: $red;
+    }
+    .red_nmb:after {
+        content: ' \20BD';
+        color: $black;
+    }    
+}
+/******************************** Planshet 1160px******************************/
+@media(max-width: 1160px) {
+    .tariffs__tbl_t{
+        font-size: 21px;
+    } 
+    .tariffs__tbl_r{
+        font-size: 22px;
+    } 
+    .tariffs__text{
+        font-size: 22px;
+    } 
+    .tariffs__titlemin{
+        font-size: 21px;
+    }       
+}
+/******************************** Phone 788px*********************************/
+@media(max-width: 788px) {
+    .tariffs__text{
+        font-size: 16px;
+    }
+    .tariffs__titlemin{
+        font-size: 15px;
+    }
+}

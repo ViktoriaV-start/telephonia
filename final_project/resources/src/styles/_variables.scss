@@ -1,0 +1,36 @@
+//colors
+$blue: #1361ff;
+$blue_light: #e7eefc;
+$background: #f8faff;
+$white: #ffffff;
+$black: #020d1d;
+$dark_text: #343d4a;
+$red: #fd0101;
+
+$max-width: 1440;
+$home-page-padding: 85px;
+$container: 60px $home-page-padding;
+
+%categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+
+    button {
+        color: $black;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid $white;
+        padding-right: 2rem;
+        padding-block: 10px;
+        flex-grow: 1;
+    }
+
+    .active {
+        color: $blue !important;
+        border-bottom: 3px solid $blue;
+    }
+}

@@ -1,0 +1,34 @@
+.footer {
+    flex: 0 0 auto;
+    background-color: rgb(29, 84, 117);
+    margin-top: 3rem;
+    padding: 1rem;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    &__logo {
+        margin-right: 6px;
+    }
+
+    &__logobox {
+        padding: 0.8rem 0.75rem 0.5rem 0.75rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+    }
+
+    &__logobox:hover {
+        background-color: rgb(14, 116, 144);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+}
+

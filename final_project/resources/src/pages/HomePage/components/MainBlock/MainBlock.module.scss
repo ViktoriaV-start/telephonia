@@ -1,0 +1,93 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.main_block {
+    position: relative;
+    height: 662px;
+    background-image: url("/img/main_block_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+
+    &__line_1,
+    &__line_2,
+    &__line_3,
+    &__info {
+        position: absolute;
+        top: 0;
+    }
+
+    &__line_1 {
+        @include left_opacity(46px, 0.8);
+    }
+
+    &__line_2 {
+        @include left_opacity(94px, 0.5);
+    }
+
+    &__line_3 {
+        @include left_opacity(139px, 0.3);
+    }
+
+    &__info {
+        padding-left: 85px;
+        padding-top: 60px;
+        color: $black;
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+            padding-bottom: 52px;
+        }
+        > a {
+            text-decoration: none;
+            color: $white;
+            background-color: $black;
+            height: 70px;
+            width: 329px;
+            border-radius: 15px;
+            text-align: center;
+            padding: 20.5px 76px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            &:hover,
+            &:active {
+                background-color: $blue;
+            }
+        }
+    }
+
+    &__tagline {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 65px;
+        text-transform: uppercase;
+        padding-bottom: 88px;
+        span {
+            color: $blue;
+        }
+    }
+
+    &__prices {
+        display: flex;
+        padding-bottom: 80.5px;
+        p {
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 33px;
+        }
+        span {
+            font-family: Roboto, sans-serif;
+            font-weight: 700;
+            font-size: 39.2523px;
+            line-height: 26px;
+            > span {
+                color: $red;
+            }
+        }
+        > .left {
+            padding-right: 43px;
+        }
+    }
+}

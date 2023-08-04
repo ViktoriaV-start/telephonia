@@ -1,0 +1,86 @@
+.admin {
+
+  &__logo {
+    margin-right: 6px;
+  }
+  &__wheader {
+    background-color: rgb(29, 84, 117);
+    padding: 0.75rem 0 0.75rem 0;
+  }
+
+  &__logo {
+        margin-right: 6px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+   text-decoration: none;
+  }
+
+  &__box {
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  &__logobox {
+   padding: 0.8rem 0.75rem 0.5rem 0.75rem;
+   border-radius: 5px;
+   font-size: 1.2rem;
+   }
+
+  &__box:hover {
+    background-color: rgb(14, 116, 144);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+
+    &__logobox:hover {
+        background-color: rgb(14, 116, 144);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+
+  &__fbcolor {
+    color: rgb(125, 211, 252);
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    margin-left: 5rem;
+  }
+
+  &__btns {
+    display: flex;
+    margin-left: auto;
+  }
+
+  &__btn {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    background-color: rgb(125, 211, 252);
+    color: rgb(255, 255, 255);
+    box-shadow: -2px 4px 8px 1px rgb(119, 157, 184);
+  }
+
+  &__exit {
+    margin-left: 2rem;
+  }
+
+  &__href {
+    text-decoration: none;
+  }
+}
+
+

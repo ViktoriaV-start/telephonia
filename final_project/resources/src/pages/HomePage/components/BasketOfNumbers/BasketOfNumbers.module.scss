@@ -1,0 +1,145 @@
+@import "@vars";
+
+.basket {
+    width: 100%;
+
+    background-color: $white;
+
+    &__title {
+        height: 102px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $blue;
+        color: $white;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+
+        border-radius: 20px 20px 0px 0px;
+
+        span {
+            width: 149px;
+            height: 49px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: $blue_light;
+            color: $black;
+
+            padding: 10px 15px;
+            margin-left: 10px;
+            border-radius: 30px;
+        }
+    }
+
+    &__info {
+        padding: 36px 30px;
+        min-height: 24.7em;
+
+        h3 {
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+
+            color: $black;
+        }
+
+        border: 1px solid $blue;
+    }
+
+    &__selected {
+        margin-top: 10px;
+
+        h3 {
+            margin-top: 20px;
+        }
+    }
+
+    &__wrapper {
+        margin-top: 10px;
+
+        width: 329px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__number {
+        width: 290px;
+
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: $black;
+
+        background-color: $blue_light;
+        padding: 5px 15px;
+        border-radius: 30px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            display: block;
+        }
+    }
+
+    &__del {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 20px;
+
+        border: none;
+        background-color: $background;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: red;
+        }
+
+        svg {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__bottom {
+        padding: 36px 41px;
+
+        border: 1px solid #1361ff;
+        border-radius: 0px 0px 20px 20px;
+
+        a {
+            padding: 20px 93px;
+
+            background-color: $black;
+            color: $white;
+            border-radius: 15px;
+
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 120%;
+
+            text-decoration: none;
+
+            cursor: pointer;
+        }
+    }
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

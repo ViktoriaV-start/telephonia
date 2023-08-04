@@ -1,0 +1,17 @@
+@import '@vars';
+
+// можно применять для адаптива к разным свойсвам в коде
+//пишем, допустим, @include adaptiv-value('margin-top', 124, 10);
+// при этом верхний отступ будет стремится от 124 до 10 px. в зависимости от р-ра экрана
+
+@mixin adaptiv-value($property, $maxSize, $minSize) {
+    $addSize: $maxSize - $minSize;
+    #{$property}: calc(
+        #{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$max-width - 320})
+    );
+}
+
+@mixin left_opacity($left, $opacity) {
+    left: $left;
+    opacity: $opacity;
+}

@@ -1,0 +1,99 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.sendRequest {
+    height: 645px;
+    &__text {
+        // @include adaptiv-value("font-size", 30, 8);
+        // @include adaptiv-value("margin-top", 20, 5.5);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 120%;
+        padding-bottom: 55px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        // height: 519px;
+    }
+}
+
+.form {
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 19px;
+        // @include adaptiv-value("font-size", 24, 7);
+        // @include adaptiv-value("line-height", 28.8, 8);
+    }
+
+    &__wrapper {
+        // @include adaptiv-value("margin-block", 55, 15);
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        margin-bottom: 30px;
+
+        input {
+            // @include adaptiv-value("padding", 20, 5.5);
+            padding: 20px;
+            border-radius: 15px;
+            border: none;
+            flex-grow: 1;
+            background-color: $white;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 130%;
+
+            ::placeholder {
+                color: $dark_text;
+                background-color: $white;
+            }
+        }
+    }
+
+    &__btn {
+        height: 70px;
+        width: 329px;
+        color: $white;
+        background-color: $black;
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        margin-bottom: 60px;
+        border: none;
+        // @include adaptiv-value("padding-block", 20.5, 6);
+        // @include adaptiv-value("padding-inline", 103.5, 29);
+        // width: fit-content;
+        // @include adaptiv-value("margin-top", 10, 3);
+
+        &:hover,
+        &:active {
+            background-color: $blue;
+        }
+    }
+
+    &__textarea {
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        background-color: $white;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 130%;
+        margin-bottom: 55px;
+
+        ::placeholder {
+            color: $dark_text;
+            background-color: $white;
+        }
+    }
+}
+
+.input_mr {
+    margin-right: 1.3em;
+    @include adaptiv-value("margin-right", 32, 9);
+}

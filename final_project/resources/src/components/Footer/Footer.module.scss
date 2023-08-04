@@ -1,0 +1,25 @@
+@import "@/styles/global.scss";
+@import "@mixins";
+
+.footer {
+    background-color: $black;
+    min-height: 150px;
+    padding: 0 $home-page-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        margin-right: 6px;
+    }
+    p {
+        color: $white;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        > span {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+}

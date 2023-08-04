@@ -1,0 +1,62 @@
+$white: #ffffff;
+$pink: #E82477;
+$md-pink: #ff7373;
+$md-pink2: #ff9090;
+$blue1: rgb(119, 157, 184);
+$blue2: rgb(14 116 144);
+$blue3: #418DA2;
+$navy-blue: rgb(29, 84, 117);
+$lt-blue: #dae8ff;
+$lt-blue2: rgb(125, 211, 252);
+$lt-pink: #FFDFD6;
+$lt-green: #D6FFF3;
+$green: #84B3A5;
+$grey1: #e5e8eb;
+$grey2: #808080;
+$grey3: #f1f5f9;
+$grey4: #d2cbcb;
+$grey5: rgb(235, 237, 238);
+$grey6: rgb(148, 173, 189);
+$grey7: #f7fafc;
+$dark: #4d4949;
+
+body,
+html {
+    height: 100%;
+    font-family: Roboto sans-serif;
+}
+
+@import 'norm';
+
+.admin__container {
+    margin: 0 auto;
+    width: 96vw;
+    min-width: 1140px;
+    max-width: 2500px;
+}
+
+.admin__active-link {
+    color: $white;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.7rem;
+}
+
+.admin__link {
+    color: $lt_blue2;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.admin__link:hover {
+    background-color: $blue2;
+    color: $white;
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+.display-none {
+    display: none !important;
+}

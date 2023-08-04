@@ -1,0 +1,236 @@
+$bg-gray-10: rgb(243 244 246);
+$bg-sky-100: rgb(29, 84, 117);
+$bg-sky-50: rgb(14 116 144);
+$blue: rgb(125 211 252);
+
+.container {
+    margin: 0 auto;
+    padding: 0 1.5rem 0 1.5rem;
+    width: 96vw;
+    min-width: 1140px;
+    max-width: 2500px;
+}
+
+.admin {
+    background-color: $bg-gray-10;
+    min-width: 1140px;
+    flex: 1 0 auto;
+
+    &__wheader {
+        background-color: $bg-sky-100;
+        padding: 0.75rem 0 0.75rem 0;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__mb {
+        margin-bottom: 0.25rem;
+    }
+
+    &__box {
+        padding: 0.5rem 0.75rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        &:hover {
+            background-color: $bg-sky-50;
+            color: rgb(255 255 255);
+            cursor: pointer;
+        }
+    }
+
+    &__active {
+        color: rgb(255 255 255);
+        padding: 0.5rem 0.75rem;
+        font-size: 1.2rem;
+    }
+
+    &__fbcolor {
+        color: $blue;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+        margin-left: 5rem;
+    }
+
+    &__btns {
+        display: flex;
+        margin-left: auto;
+    }
+
+    &__btn {
+        height: 2rem;
+        width: 5rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: $blue;
+            color: rgb(255 255 255);
+            box-shadow: -2px 4px 8px 1px rgb(119, 157, 184);
+        }
+    }
+
+    &__exit {
+        margin-left: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        height: 2rem;
+        width: 12rem;
+        border-radius: 10px;
+        border: 2px solid;
+        cursor: pointer;
+        display: block;
+        font-size: 1.2rem;
+        border: 2px solid grey;
+        padding: 5px;
+        margin-top: 2rem;
+        &:hover {
+            background-color: $blue;
+            color: rgb(255 255 255);
+            box-shadow: -2px 4px 8px 1px rgb(119, 157, 184);
+        }
+    }
+}
+
+.managers {
+    &__wrap {
+        background-color: rgb(255 255 255);
+        box-shadow: 0 2px 8px 1px rgb(235, 237, 238);
+    }
+
+    &__header {
+        font-size: 2rem;
+        font-weight: 900;
+        padding-top: 2.1rem;
+        padding-bottom: 2.1rem;
+    }
+
+}
+
+.table {
+    width: 100%;
+
+    &__wrap {
+        border-radius: 15px;
+        margin-top: 1rem;
+        background-color: #f7fafc;
+    }
+
+    &__header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #e5e8eb;
+    }
+
+    &__text {
+        text-align: center;
+        padding: 1.5rem 0 0.7rem 0.5rem;
+        font-size: 1.1rem;
+    }
+
+    &__pr {
+        padding-right: 0.5rem;
+    }
+
+    &__data {
+        background: white;
+    }
+
+    &__tr {
+        background-color: #f6f9fc;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    &__data {
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        text-align: center;
+    }
+
+    &__btn {
+        cursor: pointer;
+        // display: flex;
+        // justify-content: center;
+    }
+
+    &__btn span {
+        margin-right: 0.5rem;
+    }
+    
+      &__btn:hover {
+        color: #E82477;
+    }
+    
+      &__btn:hover &__icon {
+        fill: #E82477;
+    }
+}
+
+.search {
+    padding-top: 1.75rem;
+    display: flex;
+    justify-content: space-around;
+  
+    &__input {
+     width: 28rem;
+      border: none;
+      font-size: 1.1rem;
+      padding-left: 5px;
+    }
+  
+    &__icon {
+      fill: rgb(29, 84, 117);
+      margin-top: 6px;
+      margin-right: 7px;
+    }
+  
+    &__icon:hover {
+      cursor: pointer;
+    }
+  
+    &__input:focus {
+      outline: none;
+    }
+  
+    &__input:active {
+      outline: none;
+    }
+  
+    &__clear {
+      fill: rgb(148, 173, 189);
+      cursor: pointer;
+      margin-right: 3px;
+    }
+  
+    &__clear:hover {
+      fill: rgb(86, 135, 170);
+      cursor: pointer;
+      margin-right: 3px;
+    }
+  
+    &__box {
+      border: 1px solid #00000017;
+      border-radius: 5px;
+      height: 3.1rem;
+      display: flex;
+      align-items: center;
+    }
+  
+    &__box:hover {
+      box-shadow: -2px 4px 8px 1px rgb(119, 157, 184);
+    }
+  
+  
+  }

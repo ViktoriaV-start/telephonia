@@ -1,0 +1,33 @@
+@import "@vars";
+
+.widget {
+    min-width: 825px;
+    background-color: $blue_light;
+    padding: 32px;
+    border-radius: 20px;
+
+    &__header {
+        display: flex;
+        width: 100%;
+        margin-bottom: 43px;
+    }
+
+    &__input input {
+        background: $white;
+        border-radius: 15px;
+        border-color: transparent;
+        padding: 18px 20px;
+        font-weight: 500;
+        font-size: 24px;
+        width: 100%;
+        color: $dark_text;
+
+        &::placeholder {
+            color: $dark_text;
+        }
+    }
+
+    &__input {
+        flex-grow: 1;
+    }
+}

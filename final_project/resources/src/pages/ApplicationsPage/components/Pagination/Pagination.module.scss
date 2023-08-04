@@ -1,0 +1,58 @@
+@import "@/styles/admin.scss";
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    &__btn {
+        display: block;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 5px;
+        background-color: $blue2;
+        color: $white;
+        font-size: 2rem;
+        border: none;
+        cursor: pointer;
+        margin: 0 1rem 0 1rem;
+        text-align: center;
+    }
+
+    &__btn:hover {
+        background-color: $blue3;
+        color: $white;
+        box-shadow: -2px 4px 8px 1px $blue1;
+    }
+
+
+    &__page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.1rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 5px;
+
+            &:hover {
+                background-color: $blue1;
+                color: $white;
+                box-shadow: -2px 4px 8px 1px $blue1;
+            }
+    }
+
+    &__link {
+        margin: 0 0.1rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 0.7rem;
+    }
+
+    &__active {
+        border-bottom: 1px solid $blue1;
+    }
+
+}

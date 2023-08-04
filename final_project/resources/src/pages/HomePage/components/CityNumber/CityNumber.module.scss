@@ -1,0 +1,156 @@
+@import "@/styles/global.scss";
+@import '@mixins';
+
+.city_number {
+    height: 916px;
+    font-family: sans-serif;
+    color: $black;
+    background-color: $background;
+    padding: 60px 85px;
+    font-size: 25px;
+    line-height: 32.5px;
+/*
+    @include adaptiv-value("padding-block", 60, 16);
+    @include adaptiv-value("padding-inline", 85, 24);
+    @include adaptiv-value("font-size", 25, 7);
+    @include adaptiv-value("line-height", 32.5, 9);
+*/
+    &__title {
+        font-family: sans-serif;
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+/*
+        @include adaptiv-value("font-size", 40, 11);
+        @include adaptiv-value("line-height", 48, 14);
+*/
+    }
+    &__titlesm {
+        font-family: sans-serif;
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 400;
+        margin-top: 10px;
+/*
+        @include adaptiv-value("font-size", 30, 9);
+        @include adaptiv-value("line-height", 36, 12);
+*/
+    }
+    &__block{
+        max-width: 1362px;
+        min-height: 732px;
+        display: flex;
+        gap: 35px;
+        padding-top: 37px;
+        margin-left: -85px;
+    }
+    &__picture{
+        position: relative;
+        width: 925px;
+        mix-blend-mode: multiply;
+        background: url("/img/Rectangle_2503.png");
+        object-fit: cover;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__img{
+        position: relative;
+        float: left;
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+    &__textbox{
+        max-width: 402px;
+        height: 502px;
+        display: flex;
+        flex-direction: column;
+        display: inline-block;
+    }
+    &__text{
+        margin-bottom: 37px;
+        font-family: Roboto;
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 400;
+        color: $dark_text;
+/*
+        @include adaptiv-value("font-size", 20, 7);
+        @include adaptiv-value("line-height", 26, 10);
+*/
+    }
+}
+
+.number_options{
+    position: relative;
+    max-width: 1270px;
+    clear: both;
+    display: flex;
+    gap: 32px;
+    margin-top: -150px;
+
+    &__btn{
+        position: relative;
+        width: 402px;
+        height: 120px;
+        background: $blue;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 120%;
+        font-weight: 500;
+        color: $white;
+    }
+    &__btn:hover {
+        filter: brightness(85%);
+      }
+    &__img{
+        max-width: 80px;
+        min-height: 80px;
+    }
+}
+
+/******************************** Planshet 1160px******************************/
+@media(max-width: 1160px) {
+    .city_number__picture{
+        min-width: 40%;
+    }
+    .number_options__btn {
+        height: 100px;
+        padding: 5px 10px;
+        font-size: 20px;
+        line-height: 100%;
+        gap:5px;
+    }
+    .number_options__img{
+        width: 60px;
+        height: 60px;
+    }
+}
+/******************************** Phone 788px*********************************/
+@media(max-width: 788px) {
+    .city_number__picture{
+        float:none;
+    }
+    .city_number__block{
+
+    }
+    .city_number__textbox{
+
+    }
+    .number_options{
+        gap: 90px;
+    }
+    .number_options__btn {
+        max-width: 120px;
+        padding: 15px 30px;
+        font-size: 0px;
+    }
+}
